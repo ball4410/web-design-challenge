@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Latitude Dashboard</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" id= "fill" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item active dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                 <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class = "container">
+              <div class="row">
+         
+                <div class="main col-md-8">
+                    <h1>Summary: Latitude vs. X</h1>
+
+                    <figure>
+                        <a target = "_blank" href = "Images/Latitude_Temperature copy.png">
+                            <img width="300" height="200" src = "Images/Latitude_Temperature copy.png" alt = "Latitude vs. Average Temperature Plot" >
+                        </a>
+                    </figure>
+                    <p>
+                        The purpose of this project was to analyze how weather changes
+                        as you get closer to the equator. To accomplish this analysis, 
+                        we first pulled data form the OpenWeatherMap API to assemble
+                        a dataset of over 500 cities.
+                    </p>
+                    <p>
+                        After assembling the dataset, we used Matplotlib to plot various
+                        aspects of the weather vs. latitude. Factors we looked at included: 
+                        temperature, cloudiness, wind speed and humidity. This site provides
+                        the source data and visualizations created as part of the analysis,
+                        as well as explanations and descriptions of any trends and correlations
+                        witnessed.
+                    </p>
+                </div>
+
+                <div class="sidenav col-md-4">
+                    <h1>Visualizations</h1>
+                    <div class="row">
+                        <div class="column">
+                            <a target = "_blank" href = "Images/Latitude_Temperature copy.png">
+                            <img class= "tn" src = "Images/Latitude_Temperature copy.png" alt = "Latitude vs. Max Temperature Plot" style="width:100%">
+                            </a>
+                            <a target = "_blank" href = "Images/Latitude_Humidity.png">
+                            <img class="tn" src = "Images/Latitude_Humidity.png" alt = "Latitude vs. Humidity Plot" style="width:100%">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target = "_blank" href = "Images/Latitude_Cloudiness.png">
+                            <img class="tn" src = "Images/Latitude_Cloudiness.png" alt = "Latitude vs. Cloudiness Plot" style="width:100%">
+                            </a>
+                            <a target = "_blank" href = "Images/Latitude_WindSpeed.png">
+                            <img class="tn" src = "Images/Latitude_WindSpeed.png" alt = "Latitude vs. Wind Speed Plot" style="width:100%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+    </body>
+</html>

@@ -32,8 +32,13 @@ h1 {
     float: left;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1000px) {
     nav {
         background-color: lightseagreen;
     }
+    .column {
+        float: left;
+        width: 100%;
+        padding: 5px;
+      }
 }

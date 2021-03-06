@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Latitude Dashboard</title>
+        <title>Humidity</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
@@ -42,26 +42,18 @@
               <div class="row">
          
                 <div class="main col-md-8">
-                    <h1>Summary: Latitude vs. X</h1>
+                    <h1>Humidity</h1>
 
-                    <figure id="dashImg">
-                        <a target = "_blank" href = "Images/Latitude_Temperature copy.png">
-                            <img width="300" height="200" src = "Images/Latitude_Temperature copy.png" alt = "Latitude vs. Average Temperature Plot" >
+                    <figure>
+                        <a target = "_blank" href = "Images/Latitude_Humidity.png">
+                            <img width="600" height="400" src = "Images/Latitude_Humidity.png" alt = "Latitude vs. Average Temperature Plot" >
                         </a>
                     </figure>
                     <p>
-                        The purpose of this project was to analyze how weather changes
-                        as you get closer to the equator. To accomplish this analysis, 
-                        we first pulled data form the OpenWeatherMap API to assemble
-                        a dataset of over 500 cities.
-                    </p>
-                    <p>
-                        After assembling the dataset, we used Matplotlib to plot various
-                        aspects of the weather vs. latitude. Factors we looked at included: 
-                        temperature, cloudiness, wind speed and humidity. This site provides
-                        the source data and visualizations created as part of the analysis,
-                        as well as explanations and descriptions of any trends and correlations
-                        witnessed.
+                        The percentage of humidity is scattered.
+                        There are no obvious trends as one approaches the equator.
+                        (0 degrees Latitude) This may be due to the cities observed at the 
+                        time this data was gathered. 
                     </p>
                 </div>
 

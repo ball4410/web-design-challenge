@@ -1,5 +1,6 @@
 h1 {
     color: lightseagreen;
+    padding-bottom: 20px;
 }
 
 #fill {
@@ -29,6 +30,10 @@ h1 {
 
 figure{
     float: left;
-    width: "20";
-    height: "20" 
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        background-color: lightseagreen;
+    }
 }

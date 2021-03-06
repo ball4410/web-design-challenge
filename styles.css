@@ -31,6 +31,9 @@ h1 {
 #dashImg {
     float: left;
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 @media screen and (max-width: 1000px) {
     nav {
